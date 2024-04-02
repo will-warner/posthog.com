@@ -42,7 +42,7 @@ const planSummary: PlanData[] = [
         ],
     },
     {
-        title: 'Ridiculously cheap',
+        title: 'Pay-per-use',
         price: '$0',
         features: [
             'Generous free tier on all products',
@@ -132,7 +132,7 @@ const Plan: React.FC<{ planData: PlanData }> = ({ planData }) => (
                 </ul>
                 <div className="mt-auto">
                     <PlanCTA
-                        type={planData.title === 'Ridiculously cheap' ? 'primary' : 'secondary'}
+                        type={planData.title === 'Pay-per-use' ? 'primary' : 'secondary'}
                         ctaText={planData.CTAText}
                         ctaLink={planData.CTALink}
                     />
